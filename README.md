@@ -5,7 +5,7 @@ A improved implementation of the SIGGRAPH '97 paper: Tour Into the Picture
 ### Usage
 Note: the path of the shaders is now hard-coded as '../tip_plus/Shaders/xxx.glsl'. If the window is white when you open the excutable file, the program does not find the shaders. Please put the 'Shader' folder to the correct relative path.
 
-Steps:
+**Steps**:
 
 1. Press Ctrl+O to open a image file. A series of control points will appear indicating the structure. There are 5 faces (front, left, right, top, bottom) initially.
 2. Press Ctrl+M to move the control point. The id and the position of it is shown on the status bar.
