@@ -54,7 +54,7 @@ void GLWidget::InitScene() {
     timer->setSingleShot(false);
     timer->start(25);
 
-    /*shader_ = new Shader(this, vsml_, "../tip_plus/Shaders/cubemap.vs.glsl", "../tip_plus/Shaders/cubemap.fs.glsl");
+    /*shader_ = new Shader(this, vsml_, "./Shaders/cubemap.vs.glsl", "./Shaders/cubemap.fs.glsl");
     mesh_ = GLMesh::cube(this);
     Option op;
     frame_buf_ = new GLTexture(this, 512, 512, op);
@@ -65,7 +65,7 @@ void GLWidget::InitScene() {
     QImage zn = QImage(tr("../tip_plus/Images/cubemap/z-.png"));
     QImage zp = QImage(tr("../tip_plus/Images/cubemap/z+.png"));
     cubemap_ = GLCubeMap::fromQImages(this, xn, xp, yn, yp, zn, zp);
-    cubemap_shader_ = new Shader(this, vsml_, "../tip_plus/Shaders/envmap.vs.glsl", "../tip_plus/Shaders/envmap.fs.glsl");
+    cubemap_shader_ = new Shader(this, vsml_, "./Shaders/envmap.vs.glsl", "./Shaders/envmap.fs.glsl");
     sphere_mesh_ = GLMesh::sphere(this, 100);*/
 }
 
@@ -351,8 +351,6 @@ void GLWidget::Compute3D() {
     cuboid.SetPerspectiveMat(perspective_mat);
     cuboid.SetImageDim(w, h);
     Vec3d A_3d = anchors[0], B_3d = anchors[1], C_3d = anchors[2], D_3d = anchors[3];
-//    Vec2d E_2d(1002, 45), F_2d(311, 0), G_2d(1023, 636), H_2d(1023, 21);
-//    Vec2d A_2d(460, 470), B_2d(991, 504), C_2d(456, 68), D_2d(0, 709);
     Vec2d A_2d(anchors_2d[0]), B_2d(anchors_2d[1]), C_2d(anchors_2d[2]), D_2d(anchors_2d[3]);
     Vec2d E_2d(anchors_2d[4]), F_2d(anchors_2d[6]), G_2d(anchors_2d[7]), H_2d(anchors_2d[5]);
 

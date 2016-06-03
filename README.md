@@ -3,7 +3,7 @@
 A improved implementation of the SIGGRAPH '97 paper: Tour Into the Picture
 
 ### Usage
-Note: the path of the shaders is now hard-coded as '../tip_plus/Shaders/xxx.glsl'. If the window is white when you open the excutable file, the program does not find the shaders. Please put the 'Shader' folder to the correct relative path.
+Note: the path of the shaders is now hard-coded as './Shaders/xxx.glsl'. If the window is white when you open the excutable file, the program does not find the shaders. Please put the 'Shader' folder to the correct relative path.
 
 **Steps**:
 

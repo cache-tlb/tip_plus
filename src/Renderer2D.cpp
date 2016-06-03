@@ -10,10 +10,10 @@ Renderer2D::Renderer2D(QOpenGLFunctionsType *context, VSMathLibQT *vsml)
 }
 
 void Renderer2D::Init() {
-    draw_image_shader_ = new Shader(context, vsml, "../tip_plus/Shaders/draw_image.vs.glsl", "../tip_plus/Shaders/draw_image.fs.glsl");
+    draw_image_shader_ = new Shader(context, vsml, "./Shaders/draw_image.vs.glsl", "./Shaders/draw_image.fs.glsl");
     film_plane_ = GLMesh::plane(context);
 
-    line_shader_ = new Shader(context, vsml, "../tip_plus/Shaders/draw_line.vs.glsl", "../tip_plus/Shaders/draw_line.fs.glsl");
+    line_shader_ = new Shader(context, vsml, "./Shaders/draw_line.vs.glsl", "./Shaders/draw_line.fs.glsl");
     line_mesh_ = new GLMesh(context);
 }
 

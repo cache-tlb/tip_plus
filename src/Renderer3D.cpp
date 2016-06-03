@@ -11,7 +11,7 @@ Renderer3D::Renderer3D(QOpenGLFunctionsType *context, VSMathLibQT *vsml):
 }
 
 void Renderer3D::Init() {
-    model_shader_ = new Shader(context, vsml, "../tip_plus/Shaders/draw_model.vs.glsl", "../tip_plus/Shaders/draw_model.fs.glsl");
+    model_shader_ = new Shader(context, vsml, "./Shaders/draw_model.vs.glsl", "./Shaders/draw_model.fs.glsl");
 }
 
 void Renderer3D::SetTexture(const QImage &qimg) {
