@@ -31,6 +31,9 @@ GLWidget::GLWidget(QWidget *parent)
         edge[i][1] = e[i][1];
         anchor_flags[i] = true;
     }
+    for (int i = 0; i < 8; i++) {
+        anchors_2d[i] = Vec2d(-1,-1);
+    }
 }
 
 void GLWidget::InitScene() {
@@ -187,9 +190,11 @@ void GLWidget::UpdateCamera() {
 }
 
 void GLWidget::Set2DAnchors() {
+    int w = std::max(1, image_.width());
+    int h =std::max(1, image_.height());
     for (int i = 0; i < 8; i++) {
         renderer_2d_->anchor_flags_[i] = anchor_flags[i];
-        renderer_2d_->anchor_points_[i] = Vec2d(anchors_2d[i].x / image_.width() * 2 - 1, anchors_2d[i].y / image_.height() * 2 - 1);
+        renderer_2d_->anchor_points_[i] = Vec2d(anchors_2d[i].x / w * 2 - 1, anchors_2d[i].y / h * 2 - 1);
         renderer_2d_->edges[i] = Vec2i(edge[i][0], edge[i][1]);
     }
 }
