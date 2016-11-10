@@ -31,18 +31,15 @@ Note: the path of the shaders is now hard-coded as './Shaders/xxx.glsl'. If the 
 
 Source image
 
-
 ![](./screenshots/7.jpg)
 
 
 One view
 
-
 ![](./screenshots/5.png)
 
 
-Other view
-
+Another view
 
 ![](./screenshots/6.png)
 
