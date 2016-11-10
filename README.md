@@ -34,15 +34,27 @@ Source image
 ![](./screenshots/7.jpg)
 
 
-One view
+View 1
 
 ![](./screenshots/5.png)
 
 
-Another view
+View 2
 
 ![](./screenshots/6.png)
 
+Source image 
+
+![](./screenshots/10.jpg)
+
+
+View 1
+
+![](./screenshots/8.png)
+
+View 2
+
+![](./screenshots/9.png)
 
 
 ### Notice
