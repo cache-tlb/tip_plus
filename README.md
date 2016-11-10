@@ -26,3 +26,18 @@ Note: the path of the shaders is now hard-coded as './Shaders/xxx.glsl'. If the 
 8. Now you can press Ctrl+R to make 3D proxy of the scene. To view the model, press Alt+3 and use mouse to manipulate it.
 
    ![](./screenshots/4.png)
+
+### Other results
+** Source image**
+    ![](./screenshots/7.jpg)
+
+** One view**
+    ![](./screenshots/5.png)
+
+** Other view**
+    ![](./screenshots/6.png)
+
+### Notice
+Due to the improper useage of OpenGL encapsulation in Qt, this code can only be compiled under Qt5.5.1. When I tried in Qt5.7, although it pass the compiling, the image cannot be displayed in run time.
+
+Rewriting the OpenGL invocation remains as further work.
