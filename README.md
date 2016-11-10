@@ -28,14 +28,25 @@ Note: the path of the shaders is now hard-coded as './Shaders/xxx.glsl'. If the 
    ![](./screenshots/4.png)
 
 ### Other results
-** Source image**
-    ![](./screenshots/7.jpg)
 
-** One view**
-    ![](./screenshots/5.png)
+Source image
 
-** Other view**
-    ![](./screenshots/6.png)
+
+![](./screenshots/7.jpg)
+
+
+One view
+
+
+![](./screenshots/5.png)
+
+
+Other view
+
+
+![](./screenshots/6.png)
+
+
 
 ### Notice
 Due to the improper useage of OpenGL encapsulation in Qt, this code can only be compiled under Qt5.5.1. When I tried in Qt5.7, although it pass the compiling, the image cannot be displayed in run time.
