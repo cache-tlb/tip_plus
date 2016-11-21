@@ -53,7 +53,7 @@ HEADERS  += src/TipWindow.h \
         src/Vec4.h \
         src/GLCubeMap.h
 
-LIBS += opengl32.lib
+win32:LIBS += opengl32.lib
 
 DISTFILES += \
     Shaders/draw_image.fs.glsl \
