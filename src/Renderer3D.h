@@ -31,7 +31,7 @@ public:
     }
 
     void SetTexture(const QImage &qimg);
-    void SetMesh(const std::vector<std::vector<Vec3d> > &triangles, const std::vector<Vec3i> &faces, const std::vector<std::vector<Vec2d> > &texcoords, const std::vector<std::vector<Vec3d> > &normals);
+    void SetSceneMesh(const std::vector<std::vector<Vec3d> > &triangles, const std::vector<Vec3i> &faces, const std::vector<std::vector<Vec2d> > &texcoords, const std::vector<std::vector<Vec3d> > &normals);
     void SetCamera(const Vec3f &eye, const Vec3f &look_at, const Vec3f &up);
 
 protected:
@@ -39,14 +39,14 @@ protected:
     QOpenGLFunctionsType *context;
     VSMathLibQT *vsml;
 
-    Shader *model_shader_;
+    Shader *scene_shader_;
 
     float focal_length_, near_clip_, far_clip_;
     int window_width_, window_height_;
 
     Vec3f eye_, look_at_, up_;
 
-    GLMesh *model_mesh_;
+    GLMesh *scene_mesh_;
     GLTexture *texture_;
 };
 

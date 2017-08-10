@@ -523,7 +523,7 @@ void GLWidget::Compute3D() {
     renderer_3d_->set_focal(focal_length);
     renderer_3d_->set_window_dim(w, h);
     renderer_3d_->SetTexture(whole_texture);
-    renderer_3d_->SetMesh(triangles, faces, texcoords, normals);
+    renderer_3d_->SetSceneMesh(triangles, faces, texcoords, normals);
 
     QMessageBox::information(NULL, tr("OK"), tr("OK"));
 }
