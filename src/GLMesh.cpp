@@ -2,7 +2,7 @@
 #include "VSShaderLibQT.h"
 
 GLMesh::GLMesh(QOpenGLFunctionsType *env):
-    has_coords(true), has_normals(false),
+    has_coords(false), has_normals(false),
     context(env),
     vao(-1), vertex_coord_buff(-1), texture_coord_buff(-1), normal_buff(-1), tri_index_buff(-1)
 {
@@ -197,10 +197,11 @@ GLMesh *GLMesh::sphere(QOpenGLFunctionsType *context, int detail /* = 6 */) {
         mesh->vertices.push_back(v.z);
         // TODO: coords
         mesh->normals.push_back(v.x);
-        mesh->normals.push_back(v.z);
         mesh->normals.push_back(v.y);
+        mesh->normals.push_back(v.z);
     }
     mesh->has_normals = true;
+    mesh->has_coords = false;
     mesh->compile();
     return mesh;
 }

@@ -79,6 +79,16 @@ void GLWidget::initializeGL() {
     glDepthFunc(GL_LEQUAL);
     glShadeModel(GL_SMOOTH);
     glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
+    glClampColor(GL_CLAMP_READ_COLOR, GL_FALSE);
+
+    glEnable(GL_POINT_SMOOTH);
+    glEnable(GL_LINE_SMOOTH);
+    glEnable(GL_POLYGON_SMOOTH);
+    glHint(GL_POLYGON_SMOOTH_HINT, GL_NICEST);
+    glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
+    glHint(GL_POINT_SMOOTH_HINT, GL_NICEST);
+    glEnable(GL_MULTISAMPLE);
+    glEnable(GL_BLEND);
 
     InitScene();
 }
