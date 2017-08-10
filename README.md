@@ -61,6 +61,6 @@ View 2
 
 
 ### Notice
-Due to the improper useage of OpenGL encapsulation in Qt, this code can only be compiled under Qt5.5.1. When I tried in Qt5.7, although it pass the compiling, the image cannot be displayed in run time.
+To run the code, please place the `./Shader` directory to the working directory.
 
 Rewriting the OpenGL invocation remains as further work.
